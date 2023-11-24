@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Neuton">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="js/wordcollection.js"></script>
+    <script defer src="js/hangman.js"></script>
+</head>
+
+<body>
+    <div id="title">
+        <h2 id="name">Hangman</h2>
+        <h5>Wilber Lin</h5>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="boxSection" id="puzzle">
+                <!--container of all images for sizing-->
+                <div id="imageContainer">
+                    <div id="mainImage">
+                        <!--https://t4.ftcdn.net/jpg/03/17/72/83/360_F_317728377_sCPKkOYg94Vzb7v0kFgLvEE1Py1JZ6eI.jpg-->
+                        <img src="images/hangman-chalk-0.png" id="img0">
+                        <img src="images/hangman-chalk-1.png" id="img1">
+                        <img src="images/hangman-chalk-2.png" id="img2">
+                        <img src="images/hangman-chalk-3.png" id="img3">
+                        <img src="images/hangman-chalk-4.png" id="img4">
+                        <img src="images/hangman-chalk-5.png" id="img5">
+                        <img src="images/hangman-chalk-6.png" id="img6">
+                    </div>
+                </div>
+                <div class="letterContainer"></div>
+                <div class="hint"></div>
+            </div>
+            <div class="boxSection" id="interface">
+                <div class="message"></div>
+                <form id="theForm" action="">
+                    <div class="formSection">
+                        <label for='guessedLetter'>Guess a letter:</label>
+                        <input type="text" name="guessedLetter" class="guessedLetter" maxlength="1">
+                    </div>
+                    <button type='button' class="submit">Guess</button>
+                </form>
+                <div class="alreadyGuessed"></div>
+                <button class="playAgain">
+                    <h3>Play Again</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
