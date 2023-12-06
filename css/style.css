@@ -237,7 +237,7 @@ button:disabled {
 }
 
 /*container of all the letters*/
-.letterContainer {
+.lettersContainer {
     display: flex;
     height: 10%;
     font-size: 2rem
